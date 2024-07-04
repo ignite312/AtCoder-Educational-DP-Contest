@@ -8,6 +8,7 @@ Resource:
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
+ll dp[100][100001];
 const ll INF = 1e18+10;
 
 int main() {
@@ -19,22 +20,30 @@ int main() {
     while(tt--) {
         int n, W;
         cin >> n >> W;
-        vector<ll> weight(n), value(n);
-        int sum_val = 0;
+        vector<int> weight(n), value(n);
+        ll sum_val = 0;
         for(int i = 0; i < n; i++) {
             cin >> weight[i] >> value[i];
             sum_val+=value[i];
         }
-        vector<ll> dp(sum_val+1, INF);
-        dp[0] = 0;
         for(int i = 0; i < n; i++) {
-          for(int j = sum_val - value[i]; j >= 0; j--) {
-            dp[j+value[i]] = min(dp[j+value[i]], dp[j] + weight[i]);
+          for(int j = 0; j <= sum_val; j++) {
+            dp[i][j] = INF;
           }
         }
-        int ans = 0;
-        for(int i = 0; i <= sum_val; i++) {
-          if(dp[i] <= W) {
+        dp[0][value[0]] = weight[0]; // Take
+        dp[0][0] = 0; // Not take
+        for(int i = 1; i < n; i++) {
+          for(int j = 0; j <= sum_val; j++) {
+            dp[i][j] = min(dp[i][j], dp[i-1][j]); // Not take
+            if(j-value[i] >= 0) {
+              dp[i][j] = min(dp[i][j], dp[i-1][j-value[i]] + weight[i]); // Take
+            }
+          }
+        }
+        ll ans = 0;
+        for(int i = 1; i <= sum_val; i++) {
+          if(dp[n-1][i] <= W) {
             ans = i;
           }
         }
