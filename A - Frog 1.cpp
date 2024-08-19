@@ -1,6 +1,6 @@
 /*
-Problem Name: Frog 2
-Problem Link: https://atcoder.jp/contests/dp/tasks/dp_b
+Problem Name: A - Frog 1
+Problem Link: https://atcoder.jp/contests/dp/tasks/dp_a
 Idea: 
 Complexity:
 Resource:
@@ -16,8 +16,8 @@ int main() {
     tt = 1;
     // cin >> tt;
     while(tt--) {
-        int n, k;
-        cin >> n >> k;
+        int n;
+        cin >> n;
         vector<int> v(n);
         for(int i = 0; i < n; i++) {
             cin >> v[i];
@@ -25,9 +25,8 @@ int main() {
         vector<int> dp(n, INF);
         dp[0] = 0;
         for(int i = 0; i < n; i++) {
-          for(int j = 1; j <= k; j++) {
-            if(i+j < n)dp[i+j] = min(dp[i+j], abs(v[i] - v[i+j]) + dp[i]);
-          }
+            if(i+1 < n)dp[i+1] = min(dp[i+1], abs(v[i] - v[i+1]) + dp[i]);
+            if(i+2 < n)dp[i+2] = min(dp[i+2], abs(v[i] - v[i+2]) + dp[i]);
         }
         cout << dp[n-1] << "\n";
     }

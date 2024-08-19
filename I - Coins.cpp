@@ -1,5 +1,5 @@
 /*
-Problem Name: Coins
+Problem Name: I - Coins
 Problem Link: https://atcoder.jp/contests/dp/tasks/dp_i
 Idea: 
 Complexity:

@@ -1,5 +1,5 @@
 /*
-Problem Name: LCS
+Problem Name: F - LCS
 Problem Link: https://atcoder.jp/contests/dp/tasks/dp_f
 Idea: 
 Complexity:

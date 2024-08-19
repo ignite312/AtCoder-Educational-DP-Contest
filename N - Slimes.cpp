@@ -1,5 +1,5 @@
 /*
-Problem Name: Slimes
+Problem Name: N - Slimes
 Problem Link: https://atcoder.jp/contests/dp/tasks/dp_n
 Idea: 
 Complexity:

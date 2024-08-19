@@ -1,5 +1,5 @@
 /*
-Problem Name: Stones
+Problem Name: K - Stones
 Problem Link: https://atcoder.jp/contests/dp/tasks/dp_k
 Idea: 
 Complexity:

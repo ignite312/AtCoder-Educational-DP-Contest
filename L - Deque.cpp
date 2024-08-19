@@ -1,5 +1,5 @@
 /*
-Problem Name: Deque
+Problem Name: L - Deque
 Problem Link: https://atcoder.jp/contests/dp/tasks/dp_l
 Idea: 
 Complexity:

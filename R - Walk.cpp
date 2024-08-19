@@ -1,5 +1,5 @@
 /*
-Problem Name: Walk
+Problem Name: R - Walk
 Problem Link: https://atcoder.jp/contests/dp/tasks/dp_r
 Idea: 
 Complexity:

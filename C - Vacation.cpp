@@ -1,5 +1,5 @@
 /*
-Problem Name: Vacation
+Problem Name: C - Vacation
 Problem Link: https://atcoder.jp/contests/dp/tasks/dp_c
 Idea: 
 Complexity:

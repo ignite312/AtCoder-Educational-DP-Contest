@@ -1,5 +1,5 @@
 /*
-Problem Name: Grouping
+Problem Name: U - Grouping
 Problem Link: https://atcoder.jp/contests/dp/tasks/dp_u
 Idea: Bitmask DP 
 Complexity:

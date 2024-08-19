@@ -1,3 +1,10 @@
+/*
+Problem Name: M - Candies
+Problem Link: https://atcoder.jp/contests/dp/tasks/dp_m
+Idea:
+Complexity:
+Resource:
+*/
 #include<bits/stdc++.h>
 using namespace std;
 const int M = 1e9 + 7;
@@ -21,7 +28,6 @@ int main() {
           for(int used = k; used >= 0; used--) {
             for(int c = 1; c <= min(candies[i], k-used); c++) {
               dp[used+c] = (dp[used+c] + dp[used]) % M;
-              // cout << used << " " << dp[used+c] << "\n";
             }
           }
         }
