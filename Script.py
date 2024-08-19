@@ -40,7 +40,6 @@ Resource:
 
 """
 
-# Generate .cpp files for each task if they don't already exist
 for task_name, task_link in tasks:
     file_name = f"{task_name}.cpp"
     if not os.path.exists(file_name):
