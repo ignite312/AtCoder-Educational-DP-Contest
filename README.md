@@ -28,4 +28,4 @@ This repository contains solutions to the problems from the AtCoder Educational 
 - [W - Intervals](https://atcoder.jp/contests/dp/tasks/dp_w) - [``Solution``]<!-- (https://github.com/ignite312/AtCoder-Educational-DP-Contest/blob/main/W%20-%20Intervals.cpp) -->
 - [X - Tower](https://atcoder.jp/contests/dp/tasks/dp_x) - [``Solution``]<!-- (https://github.com/ignite312/AtCoder-Educational-DP-Contest/blob/main/X%20-%20Tower.cpp) -->
 - [Y - Grid 2](https://atcoder.jp/contests/dp/tasks/dp_y) - [``Solution``]<!-- (https://github.com/ignite312/AtCoder-Educational-DP-Contest/blob/main/Y%20-%20Grid%202.cpp) -->
-- [Z - Frog 3](https://atcoder.jp/contests/dp/tasks/dp_z) - [``Solution``]<!-- (https://github.com/ignite312/AtCoder-Educational-DP-Contest/blob/main/Z%20-%20Frog%203.cpp) -->
+- [Z - Frog 3](https://atcoder.jp/contests/dp/tasks/dp_z) - [``Solution``](https://github.com/ignite312/AtCoder-Educational-DP-Contest/blob/main/Z%20-%20Frog%203.cpp)

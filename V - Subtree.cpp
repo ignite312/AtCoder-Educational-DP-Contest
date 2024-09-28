@@ -4,6 +4,10 @@ Problem Link: https://atcoder.jp/contests/dp/tasks/dp_v
 Idea: 
 Complexity:
 Resource:
+More Problem: https://codeforces.com/contest/1187/problem/E
+More Problem: https://cses.fi/problemset/task/1132
+More Problem: https://codeforces.com/contest/1822/problem/F
+More Problem: https://atcoder.jp/contests/abc368/submissions/57074317
 */
 #include<bits/stdc++.h>
 using namespace std;
