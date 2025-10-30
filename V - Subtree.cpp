@@ -40,20 +40,20 @@ void dfs2(int u, int parent) {
   int pref = 1;
   for(auto v : adj[u]) {
     if(v == parent)continue;
-    up[v] = pref % mod;
+    up[v] = pref % mod; // parent node is black
     pref = pref*down[v] % mod;
   }
   reverse(adj[u].begin(), adj[u].end());
   int suff = 1;
   for(auto v : adj[u]) {
     if(v == parent)continue;
-    up[v] = up[v]*suff % mod;
+    up[v] = up[v]*suff % mod; // parent node is black
     suff = suff*down[v] % mod;
   }
   for(auto v : adj[u]) {
     if(v == parent)continue;
-    up[v] = up[u] * up[v] % mod;
-    up[v] = (up[v] + 1) % mod;
+    up[v] = up[u] * up[v] % mod; // parent node is black
+    up[v] = (up[v] + 1) % mod; // parent node is white
     dfs2(v, u);
   }
 }
