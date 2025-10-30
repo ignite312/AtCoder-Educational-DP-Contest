@@ -16,11 +16,14 @@ using namespace std;
 const int N = 100000;
 int n, mod;
 vector<int> adj[N];
-// up[i] = total ways to paint all the ancestors of node i 
-// if the parent of node i is painted black.
+// up[u] = number of valid colorings in the rest of the tree (outside u’s subtree)
+// assuming u must be black and connected to that part.
 vector<ll> up(N, 1);
-// down[i] = total ways to paint the subtree of node i 
-// if the node i is painted black or white.
+// down[u] = number of valid colorings in the subtree of u
+// if u must be black and all black vertices are inside its subtree (connected through u).
+// each child’s subtree can either:
+// be completely white (contribute 1)
+// or connected black region with the child as black (down[child])
 ll down[N];
 
 void dfs1(int u, int parent) {
