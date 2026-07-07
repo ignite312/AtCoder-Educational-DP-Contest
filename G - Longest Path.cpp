@@ -2,7 +2,7 @@
 Problem Name: G - Longest Path
 Problem Link: https://atcoder.jp/contests/dp/tasks/dp_g
 Idea: 
-Complexity:
+Complexity: 
 Resource:
 */
 #include<bits/stdc++.h>

@@ -1,7 +1,7 @@
 /*
 Problem Name: D - Knapsack 1
 Problem Link: https://atcoder.jp/contests/dp/tasks/dp_d
-Idea: 
+Idea:
 Complexity:
 Resource:
 */
@@ -23,6 +23,7 @@ int main() {
             cin >> weight[i] >> value[i];
         }
         vector<ll> dp(W+1, 0);
+        // dp[i] = maximum value we can get with weight i
         for(int i = 0; i < n; i++) {
           for(int j = W - weight[i]; j >= 0; j--) {
             dp[j+weight[i]] = max(dp[j+weight[i]], dp[j] + value[i]);

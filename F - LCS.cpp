@@ -20,6 +20,7 @@ int main() {
     int size_a = (int)a.size();
     int size_b = (int)b.size();
     vector<vector<int>> dp(size_b+1, vector<int> (size_a+1));
+    // dp[i][j] = length of longest common subsequence of b[0..i-1] and a[0..j-1]
     for(int i = 0; i <= size_b; i++) {
       for(int j = 0; j <= size_a; j++) {
         if(i == 0 || j == 0) {

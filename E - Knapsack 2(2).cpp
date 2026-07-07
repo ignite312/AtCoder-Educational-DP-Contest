@@ -8,8 +8,9 @@ Resource:
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
-ll dp[100][100001];
 const ll INF = 1e18+10;
+ll dp[100][100001];
+// dp[i][j] = minimum weight to achieve value j using first i items
 
 int main() {
     ios::sync_with_stdio(false);

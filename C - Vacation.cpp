@@ -1,9 +1,6 @@
 /*
 Problem Name: C - Vacation
 Problem Link: https://atcoder.jp/contests/dp/tasks/dp_c
-Idea: 
-Complexity:
-Resource:
 */
 #include<bits/stdc++.h>
 using namespace std;

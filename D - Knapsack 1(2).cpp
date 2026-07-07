@@ -9,7 +9,7 @@ Resource:
 using namespace std;
 #define ll long long
 ll dp[100][100001];
-
+// dp[i][j] = maximum value we can get with weight j using first i items
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
@@ -24,12 +24,12 @@ int main() {
             cin >> weight[i] >> value[i];
         }
         dp[0][weight[0]] = value[0]; // Take
-        // Not take defualt value dp[0][0] = 0
+        // Not take default value dp[0][0] = 0
         for(int i = 1; i < n; i++) {
           for(int j = 0; j <= W; j++) {
-            dp[i][j] = max(dp[i][j], dp[i-1][j]); // Take
+            dp[i][j] = max(dp[i][j], dp[i-1][j]); // Not take
             if(j-weight[i] >= 0) {
-              dp[i][j] = max(dp[i][j], dp[i-1][j-weight[i]] + value[i]);// Not take
+              dp[i][j] = max(dp[i][j], dp[i-1][j-weight[i]] + value[i]);// Take
             }
           }
         }

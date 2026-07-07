@@ -26,6 +26,7 @@ int main() {
             sum_val+=value[i];
         }
         vector<ll> dp(sum_val+1, INF);
+        // dp[i] = minimum weight to achieve value i
         dp[0] = 0;
         for(int i = 0; i < n; i++) {
           for(int j = sum_val - value[i]; j >= 0; j--) {
